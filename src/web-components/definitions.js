@@ -64,13 +64,13 @@ export const IncrementButton = ({ name }) => {
 }
 
 
-export const ConditionalSection = ({ fieldName, ifCondition, compareValue, children }) => {
-    debugger;
+export const ConditionalSection = ({ fieldName, conditionType, conditionValue, children }) => {
     const [,{ value }] = useField(fieldName);
 
     const conditionResult = useMemo(() => {
-        if (ifCondition === 'NOT_EQUAL') return value != compareValue
-    }, [value, ifCondition, compareValue]);
+        if (conditionType === 'NOT_EQUAL') return value != conditionValue
+        if (conditionType === 'EQUAL') return value == conditionValue
+    }, [value, conditionType, conditionValue]);
     
     return conditionResult ? children : null;
 }

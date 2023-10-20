@@ -3,6 +3,14 @@
         <switch-option value="urls">Urls</switch-option>
         <switch-option value="location">Location</switch-option>
     </switch>
+    <div style="margin-bottom: 12px;">
+        <conditional-section field-name="inputType" condition-type="EQUAL" condition-value="urls">
+            <div>URLs related fields</div>
+        </conditional-section>
+        <conditional-section field-name="inputType" condition-type="EQUAL" condition-value="location">
+            <div>Location related field</div>
+        </conditional-section>
+    </div>
 
     <label>Reviews count</label>
     <div style="display: flex; align-items: center; gap: 15px;">
