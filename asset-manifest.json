@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HonzaKirchner/input-ui-experiment/static/css/main.259c78c2.css",
+    "main.js": "/HonzaKirchner/input-ui-experiment/static/js/main.00695b01.js",
+    "index.html": "/HonzaKirchner/input-ui-experiment/index.html",
+    "main.259c78c2.css.map": "/HonzaKirchner/input-ui-experiment/static/css/main.259c78c2.css.map",
+    "main.00695b01.js.map": "/HonzaKirchner/input-ui-experiment/static/js/main.00695b01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.259c78c2.css",
+    "static/js/main.00695b01.js"
+  ]
+}
