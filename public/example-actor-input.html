@@ -1,0 +1,15 @@
+<div>
+    <switch name="inputType" label="Input type">
+        <switch-option value="urls">Urls</switch-option>
+        <switch-option value="location">Location</switch-option>
+    </switch>
+
+    <label>Reviews count</label>
+    <div style="display: flex; align-items: center; gap: 15px;">
+        <show-value name="reviewsCount"></show-value>
+        <increment-button name="reviewsCount"></increment-button>
+    </div>
+    <conditional-section field-name="reviewsCount" if-condition="NOT_EQUAL" compare-value="0">
+        <div>Hooray</div>
+    </conditional-section>
+</div>
